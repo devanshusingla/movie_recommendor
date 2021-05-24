@@ -1,0 +1,7 @@
+{
+  "genre": [],
+  "movie_limit": 1000,
+  "min_grate": 90,
+  "min_glikes": 4,
+  "gmode": "s"
+}
