@@ -1,7 +1,11 @@
 {
-  "genre": [],
-  "movie_limit": 1000,
-  "min_grate": 90,
-  "min_glikes": 4,
-  "gmode": "s"
+  "movie_categorie": "feature film",
+  "genre": [["action", "adventure"]],
+  "min_google_rate": 4,
+  "min_google_likes": 90,
+  "gmode": "strict",
+  "min_imdb_rating": 5.0,
+  "language": [],
+  "runtime": 200,
+  "release_date": []
 }

@@ -3,10 +3,17 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy.item import Item, Field
 
+class Movie(Item):
+    name = Field()
+    release_date = Field()
+    grating = Field()
+    glikes = Field()
+    selected = Field()
 
-class MovieScrapersItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    def __init__(self, name, release_date):
+        self.name = name
+        self.release_date = release_date
+
+        Item.__init__()
