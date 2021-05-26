@@ -1,6 +1,6 @@
 {
   "movie_categorie": "feature film",
-  "genre": [["action", "adventure"]],
+  "genre": ["action", "adventure"],
   "min_google_rate": 4,
   "min_google_likes": 90,
   "gmode": "strict",

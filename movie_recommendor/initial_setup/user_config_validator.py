@@ -1,1 +1,0 @@
-print("validate the user configuration file here")
