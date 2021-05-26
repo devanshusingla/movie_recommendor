@@ -1,11 +1,12 @@
 {
-  "movie_categorie": "feature film",
-  "genre": ["action", "adventure"],
+  "movie_categories": ["Feature Film"],
+  "genre": ["Action", "Adventure"],
   "min_google_rate": 4,
   "min_google_likes": 90,
   "gmode": "strict",
-  "min_imdb_rating": 5.0,
-  "language": [],
+  "min_imdb_rating": "5.0",
+  "language": "english",
   "runtime": 200,
-  "release_date": []
+  "release_date": ["2000"],
+  "adult_titles_included": true
 }
