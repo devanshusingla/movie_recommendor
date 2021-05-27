@@ -1,1 +1,1 @@
-__all__ = ['gcextractor', 'config_parser']
+__all__ = ['config_parser']

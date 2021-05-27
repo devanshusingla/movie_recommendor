@@ -11,9 +11,3 @@ class Movie(Item):
     grating = Field()
     glikes = Field()
     selected = Field()
-
-    def __init__(self, name, release_date):
-        self.name = name
-        self.release_date = release_date
-
-        Item.__init__()

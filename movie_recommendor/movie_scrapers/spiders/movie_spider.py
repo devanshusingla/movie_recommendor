@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+from movie_recommendor.movie_scrapers.items import Movie
 from itertools import combinations
 import time
 
@@ -126,3 +127,7 @@ class Movie_Spider(scrapy.Spider):
         self.start_urls = [self._extract_link(driver, genre_combination, genre_list) for genre_combination in genre_combinations]
 
         driver.quit()
+    
+    def parse(self, response):
+        for movie in response.xpath("//h3[@class='lister-item-header']"):
+            yield Movie(name=movie.xpath('a/text()').get(), release_date=movie.xpath('span/text()').getall()[1])
