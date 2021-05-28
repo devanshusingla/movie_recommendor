@@ -6,7 +6,6 @@ from selenium.webdriver.common.keys import Keys
 from movie_recommendor.movie_scrapers.items import Movie
 from movie_recommendor.movie_scrapers.pipelines import MovieScrapersPipeline
 from itertools import combinations
-import time
 
 class Movie_Spider(scrapy.Spider):    
     def _fill_form(self, driver):
