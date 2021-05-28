@@ -1,9 +1,9 @@
 {
   "movie_categories": ["Feature Film"],
   "genre": ["Action", "Adventure"],
-  "min_google_rate": 4,
+  "min_google_rating": 4,
   "min_google_likes": 90,
-  "gmode": "strict",
+  "gmode": "s",
   "min_imdb_rating": "5.0",
   "language": "english",
   "runtime": 200,
