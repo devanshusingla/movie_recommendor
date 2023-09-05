@@ -6,8 +6,12 @@
 from scrapy.item import Item, Field
 
 class Movie(Item):
+    movie_id = Field()
     name = Field()
+    imdbLikes = Field()
+    img_url = Field()
     release_date = Field()
-    grating = Field()
     glikes = Field()
-    selected = Field()
+
+class gclData(Item):
+    data = Field()
